@@ -1,0 +1,23 @@
+.navbar {
+    background-color: white;
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: #8f8f8f;
+    border: 1px solid;
+    border-color: #8f8f8f;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.navbar button {
+    background-color: white;
+    border: none;
+}
+
+.navbar button:hover {
+    cursor: pointer;
+}

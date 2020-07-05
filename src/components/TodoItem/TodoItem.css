@@ -1,0 +1,129 @@
+.todoItem {
+    background-color: white;
+    color: #584a41;
+    font-size: 20px;
+    padding: 15px;
+    border-bottom: 1px solid;
+    border-color: #d6d6d6;
+  }
+  
+.todoItemEdit {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #c2c2c2;
+  }
+  
+.todoItemEdit input {
+    border: none;
+    font-size: 20px;
+    color: #584a41;
+    margin-left: 25px;
+    width: 90%;
+  }
+  
+.todoItemEdit input:focus{
+    outline: none;
+  }
+  
+.checkboxContainer {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #c2c2c2;
+  }
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+.checkboxContainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+.checkboxContainer .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 5px;
+    height: 12px;
+    border: solid #90c2b7;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+.deleteTodo {
+    float: right;
+  }
+  
+.deleteTodo button {
+    background-color: white;
+    border: none;
+    color: #ead8d8;
+    font-size: 25px;
+  }
+  
+.deleteTodo button:hover {
+    outline: none;
+    color: #e9c9c9;
+    cursor: pointer;
+  }
+  
+.deleteTodo button:focus {
+    outline: none;
+  }
+  
+.deleteTodo #invisible {
+    opacity: 0;
+  }
+  
+.deleteTodo #visible {
+    opacity: 1;
+  }
+  
+.todoLabel {
+    transition: color 0.5s ease;
+    width: 90%;
+    max-width: 500px;
+    word-wrap: break-word;
+    padding-right: 10px;
+  }
+  
+#done {
+    text-decoration: line-through;
+    color: #bdbdbd;
+  }
+  
+#notDone {
+    text-decoration: none;
+  }
